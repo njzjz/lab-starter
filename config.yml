@@ -30,9 +30,9 @@ steps:
   event: pull_request.opened
   actions:
   - type: gate
-                  # some actions require additional options, those should appear below `type:`
-                  # you can execute multiple actions in the `before` block
-                  #
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Add name to README
   # - type:
   #   option:
   #
