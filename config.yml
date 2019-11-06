@@ -27,7 +27,7 @@ before:
 steps:
 - title: Create a new pull request
   description: Add your name to the README.md file in your new pull request
-  event:          # a list of the actions that will occur when the step is triggered by an event
+  event: pull_request.opened
   actions:
   - type:         # the type of action, full list at https://lab.github.com/docs/actions
                   # some actions require additional options, those should appear below `type:`
