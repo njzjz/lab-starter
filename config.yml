@@ -25,8 +25,8 @@ before:
 # Create one step for each action that a learner will complete
 
 steps:
-- title:          # the title of the step, shown to the learner in the course progress page
-  description:    # the event that will trigger the actions to be executed, full list at https://developer.github.com/v3/activity/events/types/
+- title: Create a new pull request
+  description: Add your name to the README.md file in your new pull request
   event:          # a list of the actions that will occur when the step is triggered by an event
   actions:
   - type:         # the type of action, full list at https://lab.github.com/docs/actions
