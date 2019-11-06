@@ -33,8 +33,8 @@ steps:
     left: '%payload.pull_request.title%'
     operator: ===
     right: Add name to README
-  # - type:
-  #   option:
+  - type: respond
+    with: pr-opened.md
   #
   # - type:
   #   option:
