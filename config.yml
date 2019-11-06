@@ -16,25 +16,25 @@ template:
 # Actions to take place after the learner registers, but before they start interacting with their repo
 
 before:
-- type: createIssue
-  title: Welcome
-  body: welcome-text.md
+  - type: createIssue
+    title: Welcome
+    body: welcome-text.md
 
 # Steps for the course
 # A list of steps that take the learner through the course
 # Create one step for each action that a learner will complete
 
 steps:
-- title: Create a new pull request
-  description: Add your name to the README.md file in your new pull request
-  event: pull_request.opened
-  actions:
-  - type: gate
-    left: '%payload.pull_request.title%'
-    operator: ===
-    right: Add name to README
-  # - type:
-  #   option:
-  #
-  # - type:
-  #   option:
+  - title: Create a new pull request
+    description: Add your name to the README.md file in your new pull request
+    event: pull_request.opened
+    actions:
+      - type: gate
+        left: "%payload.pull_request.title%"
+        operator: ===
+        right: Add name to README
+    # - type:
+    #   option:
+    #
+    # - type:
+    #   option:
