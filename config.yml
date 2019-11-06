@@ -29,7 +29,7 @@ steps:
   description: Add your name to the README.md file in your new pull request
   event: pull_request.opened
   actions:
-  - type:         # the type of action, full list at https://lab.github.com/docs/actions
+  - type: gate
                   # some actions require additional options, those should appear below `type:`
                   # you can execute multiple actions in the `before` block
                   #
